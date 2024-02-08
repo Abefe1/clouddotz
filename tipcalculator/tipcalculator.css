@@ -13,21 +13,37 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(59, 45, 45);
+    background-color: rgb(255, 255, 255);
+    color: blue;
 }
 .main{
     display: flex;
     flex-direction: row;
     width: 1000px;
-    height: 90vh;
+    height: 70vh;
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
+    background-color: rgb(55, 0, 255);
     border-radius: 10px;
+}
+
+h1{
+    color: blue;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+.head{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: blue;
 }
 .box{
     width: 400px;
-    height: 70vh;
+    height: 55vh;
     background-color: aliceblue;
     border-radius: 10px;
     display: flex;
@@ -48,6 +64,10 @@ input{
     border-width:  medium;
 }
 
+input::placeholder{
+    color: blue;
+}
+
 #select{
     width: 250px;
     height: 40px;
@@ -59,12 +79,18 @@ input{
     padding-right: -20px;
     border-color: rgb(11, 94, 167);
     border-width:  medium;
+    color: blue;
 }
 
 option{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 14px;
     font-weight: 500;
+    color: blue;
+}
+
+#cur{
+    color: blue;
 }
 
 input::-webkit-inner-spin-button{
