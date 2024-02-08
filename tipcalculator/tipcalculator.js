@@ -1,6 +1,8 @@
 window.onload= () =>{
 
     document.querySelector('#solve').onclick=calTip;
+    
+
 }
 
 function calTip() {
@@ -13,25 +15,28 @@ function calTip() {
     console.log(people);
 
 
-    if (amount=== '' || percent === ''){
+    if (amount=== '' || percent === '' ||people ===''){
         alert("Enter valid value in all fields, field can't be null")
         return;
     }
 
-    if (people ===''){
-        alert("Input a valid value")
-        return;
-    }
 
-    let tip= ((percent/100)*amount).toFixed(1);
-    let totalAmountToPay= amount + tip;
-    let tipPerPerson = tip/people;
+    let amountf = parseFloat(amount);
+    let tip= parseFloat((percent/100)*amount);
+    let totalAmountToPay= parseFloat(amount) + parseFloat(tip);
+    let tipPerPerson = parseFloat(tip/people);
 
     
-    document.querySelector('#outAmount').innerHTML=amount;
-    document.querySelector('#tamount').innerHTML=tip;
-    document.querySelector('#total').innerHTML=totalAmountToPay;
-    document.querySelector('#per').innerHTML=tip;
+    document.querySelector('#outAmount').innerHTML=amountf.toFixed(2);
+    document.querySelector('#tamount').innerHTML=tip.toFixed(2);
+    document.querySelector('#total').innerHTML=totalAmountToPay.toFixed(2);
+    document.querySelector('#per').innerHTML=tipPerPerson.toFixed(2);
+    
+}
+
+function refresh() {
+    let rset = document.querySelector('#inf');
+    rset.reset()
 }
 
 // window.addEventListener("click", ()=> {

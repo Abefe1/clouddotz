@@ -11,36 +11,33 @@
     <div><h1>TIP CALCULATOR</h1></div>
     <div class="main">
         <div class="box" id="in">
-            <p class="box1p">Amount</p>
-            <input type="number" placeholder="Amount" id="amount">
-            <p class="box1p">Tip Percentage</p>
-            <input type="number" placeholder="%" id="Percentage">
-            <p class="box1p" min="1">Total Number Of Worker</p>
-            <input type="number" min="1" placeholder="Number Of People" id="people">
-            <button id="solve">Calculate</button>
-
-
-
+            <form id="inf">
+                <p class="box1p">Amount</p>
+                <input type="number" placeholder="Amount" id="amount">
+                <p class="box1p">Tip Percentage</p>
+                <input type="number" placeholder="%" id="percentage">
+                <p class="box1p" min="1">Total Number Of Worker</p>
+                <input type="number" min="1" placeholder="Number Of People" id="people">
+                <div id="buttonWrap">
+                <button type="button" id="solve" >Calculate</button>
+                <button id="refresh" onclick="rset()">Reset</button>
+                <!-- you can decide to refresh without function because any button with default "type"
+                will automatically reset the page/form, to try that, try the line below. you can decide to comment the
+            previous reset buttton and corresponding function-->
+                <!-- <button id="refresh">Reset</button> -->
+            </div>
+            </form>
         </div>
         <div class="box" id="out">
 
             <div class="out"><p class="boxp">Service Amount:</p>
-                 <p id="outAmount">0</p></div>
+                <p id="outAmount">0</p></div>
             <div class="out"><p class="boxp">Tip Amount:</p>
-                 <p id="tamount">0</p></div>
+                <p id="tamount">0</p></div>
             <div class="out"><p class="boxp">Total Amount To Pay:</p>
                 <p id="total">0</p> </div>
             <div class="out"><p class="boxp">Tip per person:</p>
-                 <p id="per">0</p></div>
-            
-             
-            
-
-            
-             
-            
-             
-
+                <p id="per">0</p></div>
         </div>
     </div>
 </body>
