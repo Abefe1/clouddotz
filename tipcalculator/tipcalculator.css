@@ -13,7 +13,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue(139, 139, 189, 0.962);
     color: blue;
 }
 .main{
