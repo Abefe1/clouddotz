@@ -13,6 +13,7 @@ function calTip() {
     let amount = document.querySelector('#amount').value;
     let percent=document.querySelector('#percentage').value;
     let people=document.querySelector('#people').value;
+    let currency=document.querySelector('#select').value;
 
     // this is just to display our collected values to console to be sure that the user input was collected
     console.log(amount);
@@ -40,10 +41,10 @@ function calTip() {
 
     
     /*Assign output to the appropriate out-box paragraph, fixing all to 2decimal places*/
-    document.querySelector('#outAmount').innerHTML=amountf.toFixed(2);
-    document.querySelector('#tamount').innerHTML=tip.toFixed(2);
-    document.querySelector('#total').innerHTML=totalAmountToPay.toFixed(2);
-    document.querySelector('#per').innerHTML=tipPerPerson.toFixed(2);
+    document.querySelector('#outAmount').innerHTML=currency+amountf.toFixed(2);
+    document.querySelector('#tamount').innerHTML=currency+tip.toFixed(2);
+    document.querySelector('#total').innerHTML=currency+totalAmountToPay.toFixed(2);
+    document.querySelector('#per').innerHTML=currency+tipPerPerson.toFixed(2);
     
 }
 
