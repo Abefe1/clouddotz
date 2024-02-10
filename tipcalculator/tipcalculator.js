@@ -50,7 +50,7 @@ function calTip() {
 
 //function to refresh the page/form
 function refresh() {
-    let rset = document.querySelector('#inf');
+    let rset = document.querySelector('#formData');
     rset.reset()
 }
 
