@@ -20,6 +20,10 @@ section {
     color: blue;
     text-align: center;
     margin-bottom: 10px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 #headText {
@@ -57,6 +61,7 @@ section {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
+    gap: 15px
 }
 
 #selectCurrency {
@@ -105,6 +110,11 @@ option {
     font-weight: bolder;
     margin-bottom: 30px;
     gap: 20px
+    /* justify-content: center; */
+    /* flex-direction: row; */
+    /* align-self: stretch; */
+    /* width: 250px; */
+    /* margin-left: 75px; */
 }
 
 .outputTag {
@@ -158,6 +168,12 @@ input::-webkit-inner-spin-button {
         height: 90vh;
     }
 
+@media screen and (max-width:800px) {
+    .main{
+        flex-direction: column;
+        height: 90vh;
+    }
+
     section{
         height: 120vh;
     }
@@ -171,7 +187,7 @@ input::-webkit-inner-spin-button {
         margin-bottom: 0;
     }
 
-    #selectCurrency{
+    #select{
         height: 30px;
     }
 

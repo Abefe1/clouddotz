@@ -29,9 +29,7 @@ function calculateTip() {
     return;
   }
 
-
-
-    /* the following lines is to calculate the desired output.
+  /* the following lines is to calculate the desired output.
     and also parsing the output to float for flexibilty in calculation*/
 
   let parseAmount =
