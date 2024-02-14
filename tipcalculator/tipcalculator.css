@@ -3,8 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* font-size: 14px;
-    font-weight: 500; */
 }
 
 section {
@@ -15,17 +13,13 @@ section {
     height: 100vh;
     width: 100vw;
     background-color: rgb(244, 244, 247);
-    /* color: blue; */
 }
 
 .head {
     width: 60%;
     color: blue;
     text-align: center;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    margin-bottom: 10px;
 }
 
 #headText {
@@ -35,40 +29,28 @@ section {
 
 .main {
     display: flex;
-    /* flex-direction: row; */
     width: 80%;
     height: 70vh;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: rgb(55, 0, 255); */
     box-shadow: 0 0 20px rgba(3, 4, 5, 0.8);
     border-radius: 10px;
 }
-
-/* h1 {
-    color: blue;
-    font-size: 100px;
-    margin-bottom: 30px;
-} */
-
-/* h1 {
-    color: aliceblue;
-} */
 
 .box {
     width: 40%;
     height: 80%;
     background-color: rgb(90, 65, 248);
     border-radius: 10px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin: 20px; */
 }
 
 .left {
     padding: 15px;
+}
+
+.right {
+    padding: 50px 30px;
+    color: whitesmoke;
 }
 
 .formGroup {
@@ -77,18 +59,12 @@ section {
     align-items: center;
 }
 
-#select {
+#selectCurrency {
     width: 40%;
     height: 40px;
     margin: 5px 0;
     border-radius: 10px;
     color: blue;
-    /* margin-bottom: 15px; */
-    /* padding-right: 20px; */
-    /* padding-left: 10px; */
-    /* padding-right: -20px; */
-    /* border-color: blue; */
-    /* border-width: medium; */
 }
 
 label {
@@ -105,10 +81,6 @@ input {
     border-radius: 10px;
     border: none;
     padding: 5px;
-    /* margin-bottom: 15px; */
-    /* padding-left: 10px; */
-    /* padding-right: -20px; */
-    /* border-width: medium; */
 }
 
 input::placeholder {
@@ -119,7 +91,6 @@ input::placeholder {
 option {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: medium;
-    /* font-weight: 500; */
     color: blue;
 }
 
@@ -127,25 +98,16 @@ option {
     font-size: medium;
 }
 
-.right {
-    padding: 50px 30px;
-    color: whitesmoke;
-}
-
-.out {
+.output {
     display: flex;
     align-items: center;
     font-size: large;
     font-weight: bolder;
     margin-bottom: 30px;
-    /* justify-content: center; */
-    /* flex-direction: row; */
-    /* align-self: stretch; */
-    /* width: 250px; */
-    /* margin-left: 75px; */
+    gap: 20px
 }
 
-.boxp {
+.outputTag {
     width: 70%;
 }
 
@@ -160,7 +122,6 @@ button {
     margin: 5px;
     cursor: pointer;
 }
-
 
 #buttonWrap {
     width: 100%;
@@ -190,18 +151,52 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-/* p {
-    font-size: 20px;
-} */
 
-/* #out p{
-    text-align: justify;
-    width: 250px;
-} */
+@media screen and (max-width:800px) {
+    .main{
+        flex-direction: column;
+        height: 90vh;
+    }
 
+    section{
+        height: 120vh;
+    }
 
-/* .out p {
-    margin-top: 15px;
-} */
+    .box{
+        height: 45%;
+        width: 70%;
+    }
 
-@media screen and (max-width: 900px) {}
+    .formGroup{
+        margin-bottom: 0;
+    }
+
+    #selectCurrency{
+        height: 30px;
+    }
+
+    label {
+        font-size: medium;
+    }
+
+    input {
+        height: 30px;
+    }
+
+    button {
+        width:30%;
+        height: 35px;
+    }
+
+    .right {
+        padding: 20px 30px;
+    }
+
+    .head {
+        width: 80%;
+    }
+
+    #headText {
+        font-size: 50px;
+}
+}

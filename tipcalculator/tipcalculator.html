@@ -20,13 +20,12 @@
         <div class="main">
 
             <!-- div to accept input from user -->
-            <div class="box left" id="in">
+            <div class="box left">
 
                 <form id="formData">
-                    <!-- <p class="box1p">Choose Currency</p> -->
                     <div class="formGroup">
-                        <label for="select" class="box1p">Choose Currency:</label>
-                        <select class="boxSelect" name="" id="select">
+                        <label for="selectCurrency">Choose Currency:</label>
+                        <select class="boxSelect" id="selectCurrency">
                             <option selected disabled hidden id="currency">Currency</option>
                             <option value="&#8358;">Naira</option>
                             <option value="&#36;">Us Dollar</option>
@@ -37,52 +36,47 @@
                         </select>
                     </div>
 
-                    <!-- <p class="box1p">Amount</p> -->
                     <div class="formGroup">
-                        <label for="amount" class="box1p">Amount:</label>
+                        <label for="amount">Amount:</label>
                         <input type="number" placeholder="Amount" id="amount">
                     </div>
 
-                    <!-- <p class="box1p">Tip Percentage</p> -->
                     <div class="formGroup">
-                        <label for="percentage" class="box1p">Percentage:</label>
+                        <label for="percentage">Percentage:</label>
                         <input type="number" placeholder="%" id="percentage">
                     </div>
 
-                    <!-- <p class="box1p" min="1">Total Number Of Worker</p> -->
                     <div class="formGroup">
-                        <label for="people" class="box1p">Total Number of Workers:</label>
+                        <label for="people">Total Number of Workers:</label>
                         <input type="number" min="1" placeholder="Number Of People" id="people">
                     </div>
 
                     <div id="buttonWrap">
                         <button type="button" id="solve">Calculate</button>
                         <button id="refresh" onclick="rset()">Reset</button>
-                        <!-- you can decide to refresh without function because any button with default "type" will automatically reset the page/form, to try that, try the line below. you can decide to comment the previous reset buttton and corresponding function -->
-                        <!-- <button id="refresh">Reset</button> -->
                     </div>
 
                 </form>
 
             </div>
 
-            <!-- div to display output by the computer -->
-            <div class="box right" id="out">
-                <div class="out">
-                    <p class="boxp">Service Amount:</p>
-                    <p id="outAmount">0</p>
+            <!-- div to display output on the client-side (computer) -->
+            <div class="box right">
+                <div class="output">
+                    <p class="outputTag">Service Amount:</p>
+                    <p id="outputAmount">0</p>
                 </div>
-                <div class="out">
-                    <p class="boxp">Tip Amount:</p>
-                    <p id="tamount">0</p>
+                <div class="output">
+                    <p class="outputTag">Tip Amount:</p>
+                    <p id="tipAmount">0</p>
                 </div>
-                <div class="out">
-                    <p class="boxp">Total Amount To Pay:</p>
-                    <p id="total">0</p>
+                <div class="output">
+                    <p class="outputTag">Total Amount To Pay:</p>
+                    <p id="totalAmt">0</p>
                 </div>
-                <div class="out">
-                    <p class="boxp">Tip per person:</p>
-                    <p id="per">0</p>
+                <div class="output">
+                    <p class="outputTag">Tip per person:</p>
+                    <p id="perPerson">0</p>
                 </div>
             </div>
 
