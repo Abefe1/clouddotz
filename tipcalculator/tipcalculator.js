@@ -2,6 +2,7 @@
 window.onload = () => {
   //this is used to call the function for calculating the tip.
   document.querySelector("#solve").onclick = calculateTip;
+  document.querySelector("#refresh").onclick = refresh;
 };
 
 function calculateTip() {
@@ -58,7 +59,7 @@ function calculateTip() {
     currency + tipPerPerson.toFixed(2);
 }
 
-//function to refresh the page/form
+//function to refresh the form
 function refresh() {
   let resetBtn = document.querySelector("#formData");
   resetBtn.reset();
